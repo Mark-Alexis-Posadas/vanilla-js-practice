@@ -1,9 +1,11 @@
-function checkNumber(params) {
-  if (params >= 20) {
-    console.log("true");
-  } else {
-    console.log("false");
+function calculateAndCompare(numbers) {
+  for (i = 0; i < numbers.length; i++) {
+    //retun the rest of the numbers except the 31 number
+    if (numbers[i] === 100) {
+      console.log(numbers[i]);
+      return;
+    }
   }
 }
 
-checkNumber(20);
+calculateAndCompare([54, 21, 333, 31, 20, 100]);
