@@ -10,7 +10,7 @@
 // }
 
 //Write a loop that counts down from 10 to 1.
-// for (let i = 1; i <= 10; i++) {
+// for (let i = 10; i >= 1; i--) {
 //   console.log(i);
 // }
 
@@ -56,3 +56,9 @@
 // };
 
 // multiplicationTable([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+//Create a loop that iterates over a string and prints each character separately.
+function printEachCharacter(name) {
+  for (let i = 0; i < name.length; i++) console.log(name[i]);
+}
+printEachCharacter("MarkAlexisPosadas");
