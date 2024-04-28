@@ -110,3 +110,52 @@ function filterLongestString(names) {
 const output = filterLongestString(["jake", "juan", "jane", "rodolfo"]);
 console.log(output); //rodolfo
 ```
+
+## Filter out words that start with a specific letter from an array of strings.
+
+```js
+function filterFirstLetter(names, letter) {
+  const result = names.filter((name) => name.startsWith(letter));
+  return result;
+}
+
+const output = filterFirstLetter(
+  ["jake", "daniel", "labruha", "makagago", "zargon", "durong"],
+  "m"
+);
+
+console.log(output);
+```
+
+## Filter out empty strings from an array of strings.
+
+```js
+function filterEmptyString(strings) {
+  const result = strings.filter((str) => str === "");
+  return result;
+}
+
+const output = filterEmptyString(["alex", "", "aldo"]);
+console.log(output);
+```
+
+## Filter out elements that are not numbers from an array of mixed types.
+
+```js
+function filterNotNumber(arrays) {
+  const result = arrays.filter((arr) => typeof arr !== "number");
+  return result;
+}
+
+let mixedOfArrays = [
+  "John",
+  25,
+  "",
+  true,
+  { city: "New York", country: "USA" },
+  null,
+  undefined,
+];
+const output = filterNotNumber(mixedOfArrays);
+console.log(output);
+```
