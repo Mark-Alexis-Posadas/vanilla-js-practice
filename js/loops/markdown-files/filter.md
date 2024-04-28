@@ -65,3 +65,48 @@ const output = filterPositiveNumbers([
 
 console.log(output);
 ```
+
+## Filter out names with if names contains letter a or d
+
+```js
+function filterNames(names) {
+  const result = names.filter(
+    (name) => name.includes("a") || name.includes("d")
+  );
+  return result;
+}
+
+const output = filterNames(["mark", "jojo", "jed", "alex", "jean", "roxas"]);
+console.log(output);
+```
+
+## Filter out objects with a certain property value from an array of objects.
+
+```js
+function getOlderPersons(persons) {
+  const result = persons.filter((person) => person.age >= 25);
+  return result;
+}
+
+const persons = [
+  { name: "Juan", age: 25 },
+  { name: "Maria", age: 17 },
+  { name: "Pedro", age: 30 },
+  { name: "Luis", age: 16 },
+];
+
+let output = getOlderPersons(persons);
+console.log(output);
+```
+
+## Filter out strings longer than a certain length from an array of strings.
+
+```js
+function filterLongestString(names) {
+  const result = names.filter((name) => name.length >= 5);
+  return result;
+}
+
+const output = filterLongestString(["jake", "juan", "jane", "rodolfo"]);
+console.log(output); //rodolfo
+```
