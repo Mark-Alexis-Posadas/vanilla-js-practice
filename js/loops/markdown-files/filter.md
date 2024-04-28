@@ -39,3 +39,29 @@ let thresholdValue = 3;
 const result = filterNumbersGreaterThan(data, thresholdValue);
 console.log(result);
 ```
+
+## Filter out negative numbers from an array of mixed numbers.
+
+```js
+const filterNegativeNumbers = (numbers) => {
+  return numbers.filter((number) => number < 0);
+};
+let data = [-1, 4, 51, -28, 93, -78, 21, -34, 56, 53, 78, -90];
+let result = filterNegativeNumbers(data);
+console.log(result);
+```
+
+## Filter out positive numbers from an array of mixed numbers.
+
+```js
+const filterPositiveNumbers = (numbers) => {
+  const result = numbers.filter((number) => number >= 0);
+  return result;
+};
+
+const output = filterPositiveNumbers([
+  -1, 4, 51, -28, 93, -78, 21, -34, 56, 0, 53, 78, -90,
+]);
+
+console.log(output);
+```
