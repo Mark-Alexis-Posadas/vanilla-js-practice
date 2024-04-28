@@ -61,10 +61,10 @@ multiplicationTable([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 const multiplicationTable = (numbers) => {
   for (let i = 1; i <= 10; i++) {
     let row = "";
-    numbers.forEach((number) => {
-      const product = number * i;
-      row += `${number} * ${i} = ${product} `;
-    });
+    for (let j = 0; j < numbers.length; j++) {
+      const product = numbers[j] * i;
+      row += `${numbers[j]} * ${i} = ${product} `;
+    }
     console.log(row);
   }
 };
