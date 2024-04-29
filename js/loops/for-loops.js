@@ -62,3 +62,36 @@
 //   for (let i = 0; i < name.length; i++) console.log(name[i]);
 // }
 // printEachCharacter("MarkAlexisPosadas");
+
+// Find the largest number in an array.
+// function findLargestNumber(numbers) {
+//   let result;
+//   for (let i = 0; i < numbers.length; i++) {
+//     result = numbers[i];
+//   }
+//   return result;
+// }
+// const output = findLargestNumber([1, 2, 3]);
+// console.log(output);
+
+// function findLargestNumber(numbers) {
+//   let result;
+//   for (let i = 0; i < numbers.length; i++) {
+//     result = numbers[2];
+//   }
+//   return result;
+// }
+// const output = findLargestNumber([1, 2, 3]);
+// console.log(output);
+
+// function findLargestNumber(numbers) {
+//   let result = numbers[0];
+//   for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] > result) {
+//       result = numbers[i];
+//     }
+//   }
+//   return result;
+// }
+// const output = findLargestNumber([1, 2, 3]);
+// console.log(output);

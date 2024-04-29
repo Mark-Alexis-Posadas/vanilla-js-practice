@@ -1,37 +1,38 @@
-// Calculate the sum of all numbers in an array.
-function calculateSumOfAllNumbers(numbers) {
-  let sum;
-  for (let i = 0; i < numbers.length; i++) {
-    sum = numbers[0] + numbers[1] + numbers[2];
-  }
-  return sum;
-}
-const result = calculateSumOfAllNumbers([1, 2, 3]);
-console.log(result);
-
-// Calculate the sum of all numbers in an array.Optimize version
-function calculateSumOfAllNumbers(numbers) {
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-  }
-  return sum;
-}
-const result = calculateSumOfAllNumbers([1, 2, 3]);
-console.log(result);
-
 // Find the largest number in an array.
 // function findLargestNumber(numbers) {
-//   let sum;
+//   let result;
 //   for (let i = 0; i < numbers.length; i++) {
-//     sum = numbers[2];
+//     result = numbers[i];
 //   }
-//   return sum;
+//   return result;
 // }
-// const result = findLargestNumber([1, 2, 3]);
-// console.log(result);
+// const output = findLargestNumber([1, 2, 3]);
+// console.log(output);
+
+// function findLargestNumber(numbers) {
+//   let result;
+//   for (let i = 0; i < numbers.length; i++) {
+//     result = numbers[2];
+//   }
+//   return result;
+// }
+// const output = findLargestNumber([1, 2, 3]);
+// console.log(output);
+
+// function findLargestNumber(numbers) {
+//   let result = numbers[0];
+//   for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] > result) {
+//       result = numbers[i];
+//     }
+//   }
+//   return result;
+// }
+// const output = findLargestNumber([1, 2, 3]);
+// console.log(output);
 
 // Count the number of even numbers in an array.
+
 // Reverse the elements of an array.
 // Calculate the factorial of a given number.
 // Check if a given number is prime.
