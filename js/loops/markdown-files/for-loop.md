@@ -17,9 +17,12 @@ for (let i = 0; i <= 20; i++) {
 ### Write a loop that counts down from 10 to 1.
 
 ```js
-for (let i = 10; i >= 1; i--) {
-  console.log(i);
+function reverseNumber(numbers) {
+  for (let i = 10; i >= numbers; i--) {
+    console.log(i);
+  }
 }
+reverseNumber(1);
 ```
 
 ### Create a loop that iterates over an array of names and prints each name to the console.
@@ -79,4 +82,29 @@ function printEachCharacter(name) {
   for (let i = 0; i < name.length; i++) console.log(name[i]);
 }
 printEachCharacter("MarkAlexisPosadas");
+```
+
+## Calculate the sum of all numbers in an array.
+
+```js
+function calculateSumOfAllNumbers(numbers) {
+  let sum;
+  for (let i = 0; i < numbers.length; i++) {
+    sum = numbers[0] + numbers[1] + numbers[2];
+  }
+  return sum;
+}
+const result = calculateSumOfAllNumbers([1, 2, 3]);
+console.log(result);
+
+// Calculate the sum of all numbers in an array.Optimize version
+function calculateSumOfAllNumbers(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum;
+}
+const result = calculateSumOfAllNumbers([1, 2, 3]);
+console.log(result);
 ```
