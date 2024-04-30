@@ -2,8 +2,9 @@
 
 **Steps**
 
-- Initialize i variable to 1
-- Check variable i if is it less than or equal to 10
+- Write for loop body
+- Initialize i variable to 1 in for loop
+- Check if the variable i is less than or equal to 10.
 - If true Increment the variable i
 - log i
 
@@ -17,12 +18,12 @@ for (let i = 1; i <= 10; i++) {
 
 **Steps**
 
-- Declreate function with name of reverseNumber
-- Add function parameter to numbers
-- Add 1 argument to function
-- Declare for loop
-- Initialize i variable to 10
-- Check variable i if greater than or equal to numbers parameter
+- Write function body with name of reverseNumber
+- Add a parameter in function
+- Add 1 data to function argument
+- Write for loop body
+- Initialize variable i to 10
+- Check if the variable i is greater than or equal to numbers paramenter
 - if true decrement the i variable
 - log i
 
@@ -37,6 +38,15 @@ reverseNumber(1);
 
 ### Create a loop that iterates over an array of names and prints each name to the console.
 
+**Steps**
+
+- Declare an array variable named arrayOfNames.
+- Write a for loop
+- Initialize variable i to 0;
+- Check if i is less than the length of arrayOfNames.
+- If true, execute the loop body.
+- Log each name to the console.
+
 ```js
 const arrayOfNames = ["mark", "alexis", "juan"];
 for (let i = 0; i < arrayOfNames.length; i++) {
@@ -45,6 +55,10 @@ for (let i = 0; i < arrayOfNames.length; i++) {
 ```
 
 ### Multiplication table DISPLAY
+
+**Steps**
+
+-
 
 ```js
 const multiplicationTable = (numbers) => {
