@@ -7,6 +7,7 @@
 - Check if the variable i is less than or equal to 10.
 - If true Increment the variable i
 - log i
+- The output is 1,2,3,4,5,6,7,8,9,10
 
 ```js
 for (let i = 1; i <= 10; i++) {
@@ -26,6 +27,7 @@ for (let i = 1; i <= 10; i++) {
 - Check if the variable i is greater than or equal to numbers paramenter
 - if true decrement the i variable
 - log i
+- The output is 10,9,8,7,6,5,4,3,2,1
 
 ```js
 function reverseNumber(numbers) {
@@ -46,6 +48,7 @@ reverseNumber(1);
 - Check if i is less than the length of arrayOfNames.
 - If true, execute the loop body.
 - Log each name to the console.
+- The output is mark,alexis,juan
 
 ```js
 const arrayOfNames = ["mark", "alexis", "juan"];
