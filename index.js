@@ -1,12 +1,25 @@
-//Remove duplicate elements from an array.
-function removeDuplicateArray(array) {
-  let unique = [];
-  for (let index = 0; index < array.length; index++) {
-    if (!unique.includes(array[index])) {
-      unique.push(array[index]);
-    }
-  }
-  return unique;
-}
+// Generate a multiplication table for a given number.
+// function generateMultiplicationTable(param) {
+//   for (let i = 1; i <= 10; i++) {
+//     let result = param * i;
+//     console.log(`${param} x ${i} = ${result}`);
+//   }
+// }
 
-console.log(removeDuplicateArray([1, 2, 3, 4, 2, 3, 5, 6]));
+// generateMultiplicationTable(2);
+// let input = prompt("Enter number");
+
+// for (let i = 1; i <= 10; i++) {
+//   let result = input * i;
+//   console.log(`${input} x ${i} = ${result}`);
+// }
+
+// function reverseElements(elements) {
+//   const result = [];
+//   for (let i = elements.length - 1; i >= 0; i--) {
+//     const valIndex = elements[i];
+//     result.push(valIndex);
+//   }
+//   return result;
+// }
+// console.log(reverseElements([1, 2, 3, 4, 5]));

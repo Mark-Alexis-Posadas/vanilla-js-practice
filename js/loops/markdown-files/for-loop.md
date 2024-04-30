@@ -1,20 +1,30 @@
 ### Write a program to print numbers from 1 to 10 using a for loop.
 
+**Steps**
+
+- Initialize i variable to 1
+- Check variable i if is it less than or equal to 10
+- If true Increment the variable i
+- log i
+
 ```js
 for (let i = 1; i <= 10; i++) {
   console.log(i);
 }
 ```
 
-### Create a loop that prints even numbers from 0 to 20.
-
-```js
-for (let i = 0; i <= 20; i++) {
-  console.log(i);
-}
-```
-
 ### Write a loop that counts down from 10 to 1.
+
+**Steps**
+
+- Declreate function with name of reverseNumber
+- Add function parameter to numbers
+- Add 1 argument to function
+- Declare for loop
+- Initialize i variable to 10
+- Check variable i if greater than or equal to numbers parameter
+- if true decrement the i variable
+- log i
 
 ```js
 function reverseNumber(numbers) {
@@ -123,4 +133,33 @@ function removeDuplicateArray(array) {
 }
 
 console.log(removeDuplicateArray([1, 2, 3, 4, 2, 3, 5, 6]));
+```
+
+## Find the index of a specific element in an array
+
+```js
+function findIndex(array, target) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === target) {
+      return i; // Return the index if the target element is found
+    }
+  }
+  return -1; // Return -1 if the target element is not found in the array
+}
+
+console.log(findIndex([1, 2, 3, 4, 5], 3)); // Output: 2 (index of element 3 in the array)
+
+function findIndex(paramOne, paramTwo) {
+  for (let i = 0; i < paramOne.length; i++) {
+    if (paramOne[i] === paramTwo) {
+      return i;
+    }
+  }
+  return false;
+}
+
+let valOne = [1, 2, 3, 4, 5, 6];
+let valTwo = 2;
+
+console.log(findIndex(valOne, valTwo));
 ```
