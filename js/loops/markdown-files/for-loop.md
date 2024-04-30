@@ -58,7 +58,14 @@ for (let i = 0; i < arrayOfNames.length; i++) {
 
 **Steps**
 
--
+- Write function body
+- Add numbers parameter to function
+- Add array of number 1 to 10 in numbers parameter or argument
+- Initialize variable addSence to 1
+- Write a for loop
+- Initialize variable i to 1
+- Check i is less than or equal to numbers length
+- If true, execute the loop body
 
 ```js
 const multiplicationTable = (numbers) => {
@@ -83,6 +90,24 @@ multiplicationTable([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 ```
 
 ### Optimize way
+
+**Steps**
+
+- Write function body
+- Add numbers parameter to function
+- Add array of number 1 to 10 in numbers parameter or argument
+- Write a for loop
+- Initialize variable i to 1
+- Check variable i is less than or equal to 10
+- If true increment the variable i
+- Initialize variable row to empty string
+- Write another loop
+- Initialize variable j to 0
+- Check variable j if less than to numbers length
+- If true increment j variable
+- Initialize product varialbe
+- Add produt value to numbers[j] and multiply to variable i
+- Assign variable row to numbers[j] and multiple to variable i and result is product
 
 ```js
 const multiplicationTable = (numbers) => {
