@@ -237,3 +237,31 @@ for (let i = 1; i <= 10; i++) {
   console.log(`${input} x ${i} = ${result}`);
 }
 ```
+
+## Reverse the elements of an array.
+
+**Steps**
+
+- Write function body with name of reverseElement
+- Add a parameter in function
+- Add array of number 1 to 5
+- Write for loop body
+- Initialize variable i to elements parameter length and remove the last item
+- Check if the variable i is greather than or equal to 0
+- if true decrement the variables i and execute the loop
+- declare valIndex variable and the value is the elements i
+- push the variable valIndex
+- return result
+- The output shoud be 5,4,3,2,1
+
+```js
+function reverseElements(elements) {
+  const result = [];
+  for (let i = elements.length - 1; i >= 0; i--) {
+    const valIndex = elements[i];
+    result.push(valIndex);
+  }
+  return result;
+}
+console.log(reverseElements([1, 2, 3, 4, 5]));
+```
