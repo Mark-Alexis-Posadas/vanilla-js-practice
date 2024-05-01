@@ -1,18 +1,18 @@
 // Generate a multiplication table for a given number.
-// function generateMultiplicationTable(param) {
-//   for (let i = 1; i <= 10; i++) {
-//     let result = param * i;
-//     console.log(`${param} x ${i} = ${result}`);
-//   }
-// }
+function generateMultiplicationTable(param) {
+  for (let i = 1; i <= 10; i++) {
+    let result = param * i;
+    console.log(`${param} x ${i} = ${result}`);
+  }
+}
 
-// generateMultiplicationTable(2);
-// let input = prompt("Enter number");
+generateMultiplicationTable(2);
+let input = prompt("Enter number");
 
-// for (let i = 1; i <= 10; i++) {
-//   let result = input * i;
-//   console.log(`${input} x ${i} = ${result}`);
-// }
+for (let i = 1; i <= 10; i++) {
+  let result = input * i;
+  console.log(`${input} x ${i} = ${result}`);
+}
 
 // function reverseElements(elements) {
 //   const result = [];
