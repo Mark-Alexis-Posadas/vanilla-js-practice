@@ -179,6 +179,19 @@ console.log(removeDuplicateArray([1, 2, 3, 4, 2, 3, 5, 6]));
 
 ## Find the index of a specific element in an array
 
+**Steps**
+
+- Write function body with name of findeIndex
+- Add a two parameter in function
+- Add array of number 1 to 10 of first parameter and add 3 number of second parameter
+- Write for loop body
+- Initialize variable i to 0
+- Check if the variable i is less than to array length
+- if true compare the array of i to second parameter
+- if true return i
+- if not return -1
+- Te output shoud be 2 because the index of 3 is 2
+
 ```js
 function findIndex(array, target) {
   for (let i = 0; i < array.length; i++) {
