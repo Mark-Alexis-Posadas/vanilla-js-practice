@@ -265,3 +265,13 @@ function reverseElements(elements) {
 }
 console.log(reverseElements([1, 2, 3, 4, 5]));
 ```
+
+## Count the number of even numbers in an array.
+
+```js
+for (let i = 0; i <= 20; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+}
+```
