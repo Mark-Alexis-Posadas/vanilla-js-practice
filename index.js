@@ -1,19 +1,22 @@
-function checkDay(day) {
-  switch (day) {
-    case 0:
-      return "Sunday";
-    case 1:
-      return "Monday";
-    case 2:
-      return "Tuesday";
-    case 3:
-      return "Wednesday";
-    case 4:
-      return "Thursday";
-    case 5:
-      return "Friday";
-    case 6:
-      return "Saturday";
-  }
-}
-console.log(checkDay());
+//Grade Evaluation
+// function gradeEvaluation(grade) {
+//   if (grade < 60) {
+//     return "Fail";
+//   }
+//   return "Pass";
+// }
+// console.log(gradeEvaluation(61)); //Pass
+// console.log(gradeEvaluation(59)); //Fail
+
+//Age Group Determination
+// function ageGroupDetermination(age) {
+//   if (age < 13) {
+//     return "Child";
+//   } else if (age > 19) {
+//     return "Adult";
+//   } else {
+//     return "Teenager";
+//   }
+// }
+
+// console.log(ageGroupDetermination(12));
