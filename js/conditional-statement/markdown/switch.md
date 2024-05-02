@@ -3,6 +3,8 @@
 ```js
 function checkDay(day) {
   switch (day) {
+    case 0:
+      return "Sunday";
     case 1:
       return "Monday";
     case 2:
@@ -15,13 +17,9 @@ function checkDay(day) {
       return "Friday";
     case 6:
       return "Saturday";
-    case 7:
-      return "Sunday";
-    default:
-      return "Not found";
   }
 }
-console.log(checkDay(1));
+console.log(checkDay(5)); //Friday
 ```
 
 ## A calculator program that performs basic arithmetic operations (addition, subtraction, multiplication, division) based on user input.
