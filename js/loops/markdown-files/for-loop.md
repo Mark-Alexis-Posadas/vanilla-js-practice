@@ -268,6 +268,14 @@ console.log(reverseElements([1, 2, 3, 4, 5]));
 
 ## Count the number of even numbers in an array.
 
+**Steps**
+
+- Initialize a loop.
+- Set a variable i to iterate through numbers from 0 to 20.
+- Check if i is divisible by 2.
+- If i is divisible by 2, log i.
+- Repeat steps 3-4 until i reaches 20.
+
 ```js
 for (let i = 0; i <= 20; i++) {
   if (i % 2 == 0) {
