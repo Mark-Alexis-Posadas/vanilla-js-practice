@@ -1,94 +1,101 @@
-// const number = prompt("Enter a number:");
+// Get user input for a number
+const userNumber = prompt("Enter a number:");
 
-// const result = number % 2 == 0 ? "even" : "odd";
+// Determine if the number is even or odd
+const resultMessage = userNumber % 2 === 0 ? "even" : "odd";
 
-// alert("the number is" + result);
+// Display the result to the user
+alert("The number is " + resultMessage);
 
-// function test(params) {
-//   for (i = 0; i < params.length; i++) {
-//     if (params[i] == 8) {
-//       console.log(i + 2);
-//       return;
-//     }
-//   }
-// }
+// Function to find index of number 8 in an array and log the index plus 2
+function findIndexOfEight(numbersArray) {
+  for (let i = 0; i < numbersArray.length; i++) {
+    if (numbersArray[i] === 8) {
+      console.log("Index of 8 plus 2:", i + 2);
+      return;
+    }
+  }
+}
 
-// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// test(numbers);
+// Test the function with an array of numbers
+let numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+findIndexOfEight(numbersArray);
 
-// function test(params) {
-//   if (params) {
-//     console.log("true");
-//     return;
-//   }
-//   console.log(false);
-// }
-// test();
+// Function to check if a parameter is true or false
+function checkIfTrue(param) {
+  if (param) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
+}
+checkIfTrue();
 
-// function test(params) {
-//   for (let i = 0; i < params.length; i++) {
-//     console.log(params[i]);
-//   }
-// }
-// test(["alex", "petrola", "posadas"]);
+// Function to log each element of an array
+function logArrayElements(array) {
+  for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+}
+logArrayElements(["alex", "petrola", "posadas"]);
 
-// function getHighestNUMBERS(numbers) {
-//   const filterHighestNumbers = numbers.filter((number) => number >= 16);
-//   console.log(filterHighestNumbers);
-// }
-// let inputNumbers = [1, 10, 12, 20, 70, 80, 3, 16, 22, 34, 8, 4, 5100];
-// getHighestNUMBERS(inputNumbers);
+// Function to get numbers higher than or equal to 16 from an array
+function getHighestNumbers(numbers) {
+  const filteredNumbers = numbers.filter((number) => number >= 16);
+  console.log(filteredNumbers);
+}
+let inputNumbers = [1, 10, 12, 20, 70, 80, 3, 16, 22, 34, 8, 4, 5100];
+getHighestNumbers(inputNumbers);
 
-// //check numbers if both lowest or highest
-// function checkStatus(paramOne, paramTwo) {
-//   if (paramOne < paramTwo && paramTwo > paramOne) {
-//     console.log(paramOne * paramTwo);
-//   }
-// }
+// Function to multiply two numbers if one is lower and one is higher
+function checkAndMultiply(paramOne, paramTwo) {
+  if (paramOne < paramTwo && paramTwo > paramOne) {
+    console.log(paramOne * paramTwo);
+  }
+}
 
-// let numOne = 40;
-// let numTwo = 90;
+// Test the function with two numbers
+let numOne = 40;
+let numTwo = 90;
+checkAndMultiply(numOne, numTwo);
 
-// checkStatus(numOne, numTwo);
+// Function to find the largest number in an array
+function printLargestNumber(numbers) {
+  let largest = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > largest) {
+      largest = numbers[i];
+    }
+  }
+  console.log("The largest number is:", largest);
+}
+printLargestNumber([1, 2, 3, 4]);
 
-// //Maximum of Three Numbers: Create a program that takes three numbers as input and prints the largest one.
-// function printLargestNumber(numbers) {
-//   let largest = numbers[0];
-//   console.log(largest);
-//   for (i = 0; i < numbers.length; i++) {
-//     console.log(numbers[i]);
-//     if (numbers[i] > largest) {
-//       largest = numbers[i];
-//     }
-//   }
-//   console.log("The largest number is:", largest);
-// }
-// printLargestNumber([1, 2, 3, 4]);
+// Function to determine if a number is positive, negative, or zero
+function determineSign(number) {
+  if (number > 0) {
+    console.log("Positive");
+  } else if (number < 0) {
+    console.log("Negative");
+  } else {
+    console.log("Zero");
+  }
+}
 
-// //  Positive, Negative, or Zero: Write a program that reads an integer from the user and prints whether it's positive, negative, or zero.
+// Test the function with different numbers
+determineSign(1); // Positive
+determineSign(-1); // Negative
+determineSign(0); // Zero
 
-// function readsInteger(number) {
-//   if (number > 0) {
-//     console.log("POSITIVE");
-//   } else if (number < 0) {
-//     console.log("Negative");
-//   } else {
-//     console.log("Zero");
-//   }
-// }
+// Function to find and log number 100 in an array
+function findAndLog100(numbers) {
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === 100) {
+      console.log(numbers[i]);
+      return;
+    }
+  }
+}
 
-// readsInteger(1); //positive
-// readsInteger(-1); //Negative
-// readsInteger(0); //Zero
-
-// function calculateAndCompare(numbers) {
-//   for (i = 0; i < numbers.length; i++) {
-//     //retun the rest of the numbers except the 31 number
-//     if (numbers[i] === 100) {
-//       console.log(numbers[i]);
-//       return;
-//     }
-//   }
-// }
-
-// calculateAndCompare([54, 21, 333, 31, 20, 100]);
+// Test the function with an array of numbers
+findAndLog100([54, 21, 333, 31, 20, 100]);
