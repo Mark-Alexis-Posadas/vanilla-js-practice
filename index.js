@@ -86,16 +86,29 @@
 
 // Index of substring:
 // Output: "Hello world".indexOf("world") should give 6
-function concatenation(param) {
-  return param.indexOf("world");
-}
-console.log(concatenation("Hello world"));
+// function concatenation(param) {
+//   return param.indexOf("world");
+// }
+// console.log(concatenation("Hello world"));
 
 // Replace substring:
 // Output: "Hello world".replace("world", "Universe") should give "Hello Universe"
+// function concatenation(param) {
+//   return param.replace("world", "Universe");
+// }
+// console.log(concatenation("Hello world"));
 
 // Split string:
 // Output: "Hello,World".split(",") should give ["Hello", "World"]
+// function concatenation(param) {
+//   return param.split(",");
+// }
+// console.log(concatenation("Hello world"));
 
 // Character at index:
 // Output: "Hello".charAt(1) should give "e"
+
+function concatenation(param) {
+  return param.charAt(1);
+}
+console.log(concatenation("Hello world"));
