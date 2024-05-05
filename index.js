@@ -31,15 +31,30 @@
 // console.log(sampleLoop([1, 2, 3, 4, 5]));
 
 // Write a function that checks if a given string is a palindrome (reads the same forwards and backwards). Use a loop to compare characters from the beginning and end of the string.
-function palindromCheck(str) {
-  const len = str.length;
-  for (let i = 0; i < str.length / 2; i++) {
-    if (str[i] !== str[len - 1 - i]) {
-      return "Not Palindrome";
-    }
+// function palindromCheck(str) {
+//   const len = str.length;
+//   for (let i = 0; i < str.length / 2; i++) {
+//     if (str[i] !== str[len - 1 - i]) {
+//       return "Not Palindrome";
+//     }
+//   }
+//   return "Palindrome";
+// }
+
+// let result = palindromCheck("lol");
+// console.log(result);
+
+// Count Words:
+// Create a function that takes a string as input and returns the count of words in the string. Use a loop to iterate through each character and count the number of spaces to determine word boundaries.
+
+function countWords(str) {
+  let wordCount = 0;
+  for (let i = 0; i < str.length; i++) {
+    wordCount += str[i].includes(" ");
   }
-  return "Palindrome";
+  return wordCount;
 }
 
-let result = palindromCheck("lol");
+let result = countWords("mark alexis petrola posadas  pogi");
+
 console.log(result);
