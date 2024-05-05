@@ -47,14 +47,39 @@
 // Count Words:
 // Create a function that takes a string as input and returns the count of words in the string. Use a loop to iterate through each character and count the number of spaces to determine word boundaries.
 
-function countWords(str) {
-  let wordCount = 0;
-  for (let i = 0; i < str.length; i++) {
-    wordCount += str[i].includes(" ");
+// function countWords(str) {
+//   let wordCount = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     wordCount += str[i].includes(" ");
+//   }
+//   return wordCount;
+// }
+
+// let result = countWords("mark alexis petrola posadas  pogi");
+
+// console.log(result);
+
+// Remove Duplicates:
+// Write a function that removes duplicate characters from a string. Use a loop to iterate through each character of the string and keep track of characters already encountered.
+
+// Title Case Conversion:
+// Implement a function that converts the first character of each word in a string to uppercase and the rest to lowercase. Use a loop to iterate through each word in the string.
+
+function titleCaseConversion(str) {
+  // Split the string into an array of words
+  let words = str.split(" ");
+
+  // Iterate through each word
+  for (let i = 0; i < words.length; i++) {
+    // Convert the first character to uppercase and the rest to lowercase
+    words[i] =
+      words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase();
   }
-  return wordCount;
+
+  // Join the array back into a string
+  return words.join(" ");
 }
 
-let result = countWords("mark alexis petrola posadas  pogi");
+let result = titleCaseConversion("mark aLeXis posadas");
 
-console.log(result);
+console.log(result); // Output: "Mark Alexis Posadas"
