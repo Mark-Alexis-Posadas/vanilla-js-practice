@@ -4,7 +4,11 @@ function songDuration(songs) {
   let results = [];
 
   for (let i = 0; i < songs.length; i++) {
-    const element = `Song ${songs[i].name}, ${songs[i].duration / 60}`;
+    const minutes = Math.floor(songs[i].duration / 60);
+    const extraSeconds = songs[i].duration % 60;
+    const element = `Song ${songs[i].name}, Duration: ${minutes}:${
+      extraSeconds >= 10 ? extraSeconds : "0" + extraSeconds
+    }`;
     results.push(element);
   }
 
