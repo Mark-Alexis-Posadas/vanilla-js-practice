@@ -47,18 +47,18 @@
 // console.log(maxThreeNumbers(100, 133, 12));
 
 //Finde lowest number
-function findLowestNumbers(paramOne, paramTwo, paramThree) {
-  let result;
-  if (paramOne <= paramTwo && paramOne <= paramThree) {
-    result = paramOne;
-  } else if (paramTwo <= paramOne && paramTwo <= paramThree) {
-    result = paramTwo;
-  } else {
-    result = paramThree;
-  }
-  return result;
-}
-console.log(findLowestNumbers(113, 12, 90));
+// function findLowestNumbers(paramOne, paramTwo, paramThree) {
+//   let result;
+//   if (paramOne <= paramTwo && paramOne <= paramThree) {
+//     result = paramOne;
+//   } else if (paramTwo <= paramOne && paramTwo <= paramThree) {
+//     result = paramTwo;
+//   } else {
+//     result = paramThree;
+//   }
+//   return result;
+// }
+// console.log(findLowestNumbers(113, 12, 90));
 
 // Grade Assignment:
 // Write a function that takes a student's score as a parameter and returns their grade based on the following criteria:
@@ -67,6 +67,24 @@ console.log(findLowestNumbers(113, 12, 90));
 //     70 <= Score < 80: C
 //     60 <= Score < 70: D
 //     Score < 60: F
+
+// function assignmentScore(score) {
+//   let grade;
+//   if (score >= 90) {
+//     grade = "A";
+//   } else if (80 <= score && score < 90) {
+//     grade = "B";
+//   } else if (70 <= score && score < 80) {
+//     grade = "C";
+//   } else if (60 <= score && score < 70) {
+//     grade = "D";
+//   } else {
+//     grade = "F";
+//   }
+//   return grade;
+// }
+
+// console.log(assignmentScore(19));
 
 // Leap Year Checker:
 // Write a function that takes a year as a parameter and returns true if it's a leap year, otherwise false. Leap years are divisible by 4, but not by 100 unless they are also divisible by 400.
@@ -79,3 +97,14 @@ console.log(findLowestNumbers(113, 12, 90));
 //     "Equilateral" if all three sides are equal.
 //     "Isosceles" if exactly two sides are equal.
 //     "Scalene" if all sides are different lengths.
+
+function checkTriangleType(a, b, c) {
+  return (
+    (a === b && b === c && "equilateral") ||
+    ((a === b || a === c || b === c) && "isosceles") ||
+    "scalene"
+  );
+}
+console.log(checkTriangleType(20, 20, 20)); // Equilateral
+console.log(checkTriangleType(1, 2, 1)); //Isosceles
+console.log(checkTriangleType(1, 2, 3)); //Scalene
