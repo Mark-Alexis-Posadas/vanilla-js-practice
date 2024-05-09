@@ -4,33 +4,22 @@
 
 // Checking for Existence of an Element:
 // Input: [10, 20, 30, 40, 50], 40
+const checkExistenceElement = (paramOne, paramTwo) => {
+  for (let i = 0; i < paramOne.length; i++) {
+    if (paramOne[i] === paramTwo) {
+      return true;
+    }
+  }
+  return false;
+};
+
+console.log(checkExistenceElement([10, 20, 30, 40, 50], 20));
+
 // Output: true
 
 // Combining Arrays:
 // Input: [1, 2, 3], [4, 5, 6]
 // Output: [1, 2, 3, 4, 5, 6]
-
-// Sorting an Array of Strings:git status
-// Input: ['banana', 'apple', 'orange', 'grape']
-// const sorting = (param) => {
-//   return param.sort();
-// };
-
-// console.log(sorting(["banana", "apple", "orange", "grape"]));
-
-// Output: ['apple', 'banana', 'grape', 'orange']
-
-// Reducing an Array of Numbers to their Sum:
-// Input: [1, 2, 3, 4, 5]
-const numbersSum = (numbers) => {
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-  }
-  return sum;
-};
-console.log(numbersSum([1, 2, 3, 4, 5]));
-// Output: 15
 
 // Flattening an Array of Arrays:
 // Input: [[1, 2], [3, 4], [5, 6]]
