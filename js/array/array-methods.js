@@ -20,8 +20,7 @@ const findMaxNumber = (numbers) => {
   return max;
 };
 
-// console.log(findMaxNumber([10, 20, 4, 15]));
-
+console.log(findMaxNumber([10, 20, 4, 15]));
 // Output: 20
 
 // Counting Occurrences:
@@ -40,5 +39,18 @@ const countingOccurences = (param) => {
 console.log(
   countingOccurences(["apple", "banana", "apple", "orange", "apple"])
 );
-
 // Output: { 'apple': 3, 'banana': 1, 'orange': 1 }
+
+// Checking for Existence of an Element:
+// Input: [10, 20, 30, 40, 50], 40
+const checkExistenceElement = (paramOne, paramTwo) => {
+  for (let i = 0; i < paramOne.length; i++) {
+    if (paramOne[i] === paramTwo) {
+      return true;
+    }
+  }
+  return false;
+};
+
+console.log(checkExistenceElement([10, 20, 30, 40, 50], 20));
+// Output: true
