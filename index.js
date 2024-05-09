@@ -9,6 +9,19 @@
 
 // Finding the Maximum Number:
 // Input: [10, 20, 5, 15]
+// const findMaxNumber = (numbers) => {
+//   let max = numbers[0];
+//   numbers.forEach((number) => {
+//     if (number > max) {
+//       max = number;
+//     }
+//   });
+
+//   return max;
+// };
+
+// console.log(findMaxNumber([10, 20, 4, 115]));
+
 // Output: 20
 
 // Counting Occurrences:
