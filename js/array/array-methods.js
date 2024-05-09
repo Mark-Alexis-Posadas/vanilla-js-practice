@@ -22,16 +22,14 @@ const findMaxNumber = (numbers) => {
 
 console.log(findMaxNumber([10, 20, 4, 15]));
 
-//
+//Optimize version
+const findMaxNumberOptimizeVersion = (numbers) => {
+  let max = numbers[0];
+  numbers.forEach((number) => (max < number ? (max = number) : max));
+  return max;
+};
 
-// small version
-// const findMaxNumber = (numbers) => {
-//   let max = numbers[0];
-//   numbers.forEach((number) => (max < number ? (max = number) : max));
-//   return max;
-// };
-
-// console.log(findMaxNumber([10, 20, 4, 15]));
+console.log(findMaxNumberOptimizeVersion([10, 20, 4, 15]));
 
 // Output: 20
 
