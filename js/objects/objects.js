@@ -79,9 +79,7 @@ let products = [
   { name: "Headphones", price: 60 },
 ];
 
-let result = productPrices(products);
-
-console.log(result);
+console.log(productPrices(products));
 
 // Create an object representing a list of songs with their durations in seconds. Use a loop to print each song's name along with its duration in minutes and seconds.
 
@@ -105,9 +103,7 @@ let songs = [
   { name: "Stairway to Heaven", duration: 482 },
 ];
 
-let result = songDuration(songs);
-
-console.log(result);
+console.log(songDuration(songs));
 
 // Create an object representing a list of countries with their populations and continents. Use a loop to print each country's name along with its population and continent.
 
@@ -129,5 +125,4 @@ let countries = [
   { name: "India", population: 1380000000, continent: "Asia" },
 ];
 
-let result = listOfCountries(countries);
-console.log(result);
+console.log(listOfCountries(countries));
