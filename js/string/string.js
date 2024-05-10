@@ -114,8 +114,7 @@ function palindromCheck(str) {
   return "Palindrome";
 }
 
-let result = palindromCheck("lol");
-console.log(result);
+console.log(palindromCheck("lol"));
 
 // Count Words:
 // Create a function that takes a string as input and returns the count of words in the string. Use a loop to iterate through each character and count the number of spaces to determine word boundaries.
@@ -128,9 +127,7 @@ function countWords(str) {
   return wordCount;
 }
 
-let result = countWords("mark alexis petrola posadas  pogi");
-
-console.log(result);
+console.log(countWords("mark alexis petrola posadas  pogi"));
 
 // Title Case Conversion:
 // Implement a function that converts the first character of each word in a string to uppercase and the rest to lowercase. Use a loop to iterate through each word in the string.
@@ -150,6 +147,4 @@ function titleCaseConversion(str) {
   return words.join(" ");
 }
 
-let result = titleCaseConversion("mark aLeXis posadas");
-
-console.log(result); // Output: "Mark Alexis Posadas"
+console.log(titleCaseConversion("mark aLeXis posadas")); // Output: "Mark Alexis Posadas"
