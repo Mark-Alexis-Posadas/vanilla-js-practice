@@ -1,34 +1,16 @@
-// Finding Unique Elements:
-// Input: [1, 2, 3, 4, 2, 1, 5]
-const findingUniqueElements = (elements) => {
-  let results = elements.filter((v, i, self) => {
-    return i === self.indexOf(v);
-  });
-  return results;
-};
+// Voting Eligibility
+// Input: Age of a person
+// Output: "Eligible to vote" if age is 18 or above, "Not eligible to vote" otherwise.
 
-console.log(findingUniqueElements([1, 2, 3, 4, 2, 1, 5]));
-
-// Output: [1, 2, 3, 4, 5]
-
-// Checking for Palindromes:
-// Input: ['radar', 'hello', 'level', 'world']
-const palindromesChecking = (params) => {
-  let results = [];
-  for (let param of params) {
-    const len = param.length;
-    let isPalindrome = true;
-    for (let i = 0; i < len / 2; i++) {
-      if (param[i] !== param[len - 1 - i]) {
-        isPalindrome = false;
-        break;
-      }
-    }
-    if (isPalindrome) {
-      results.push(param);
-    }
+function votingEligibility(age) {
+  let result;
+  if (age >= 18) {
+    result = "Eligible to vote";
+  } else {
+    result = "Not eligible to vote";
   }
-  return results;
-};
+  return result;
+}
 
-console.log(palindromesChecking(["radar", "hello", "level", "world"]));
+console.log(votingEligibility(18)); //Eligible to vote
+console.log(votingEligibility(12)); // Not eligible to vote
