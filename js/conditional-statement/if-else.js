@@ -213,3 +213,31 @@ function numberInRage(number) {
 }
 
 console.log(numberInRage(1));
+
+// Grade Calculator:
+// Write a program that takes a student's score (0-100) as input and prints out their grade based on the following scale:
+// A: 90-100
+// B: 80-89
+// C: 70-79
+// D: 60-69
+// F: 0-59
+
+function gradeCalculator(grade) {
+  if (grade >= 90 && grade <= 100) {
+    return "A";
+  } else if (grade >= 80 && grade <= 89) {
+    return "B";
+  } else if (grade >= 70 && grade <= 79) {
+    return "C";
+  } else if (grade >= 60 && grade <= 69) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
+
+console.log(gradeCalculator(91)); //A
+console.log(gradeCalculator(81)); //B
+console.log(gradeCalculator(76)); //C
+console.log(gradeCalculator(65)); //D
+console.log(gradeCalculator(44)); //F
