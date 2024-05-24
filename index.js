@@ -1,20 +1,14 @@
-// Age Group Classification
-// Input: Age of a person
-// Output: "Child" if age is less than 13, "Teen" if age is between 13 and 19, "Adult" if age is between 20 and 64, "Senior" if age is 65 or above.
-
-function ageOfPerson(age) {
-  let result;
-  if (age < 13) {
-    result = "Child";
-  } else if (age >= 13 && age <= 19) {
-    result = "Teen";
-  } else if (age >= 20 && age <= 64) {
-    result = "Adult";
-  } else {
-    result = "Senior";
+//Print heighets number
+function printHighestNumber(numbers) {
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[0] > numbers[1] && numbers[0] > numbers[2]) {
+      return numbers[0];
+    } else if (numbers[1] > numbers[0] && numbers[1] > numbers[2]) {
+      return numbers[1];
+    } else {
+      return numbers[2];
+    }
   }
-
-  return result;
 }
 
-console.log(ageOfPerson(75));
+console.log(printHighestNumber([20, 3000, 4110]));
