@@ -1,19 +1,21 @@
-// Traffic Light Simulator:
+// Write a program that takes a month (1-12) as input and prints the corresponding season:
+// Winter: December (12), January (1), February (2)
+// Spring: March (3), April (4), May (5)
+// Summer: June (6), July (7), August (8)
+// Autumn: September (9), October (10), November (11)
 
-// Write a program that takes a color input (red, yellow, green) and prints what the driver should do: "Stop" for red, "Get ready" for yellow, and "Go" for green.
-
-function trafficLightSimulator(light) {
-  if (light === "red") {
-    return "Stop";
-  } else if (light === "yellow") {
-    return "Get ready";
-  } else if (light === "green") {
-    return "Go";
+function seasonIdentifier(month) {
+  if (month === 12 || month === 1 || month === 2) {
+    return "Winter";
+  } else if (month === 3 || month === 4 || month === 5) {
+    return "Spring";
+  } else if (month === 6 || month === 7 || month === 8) {
+    return "Summer";
+  } else if (month === 9 || month === 10 || month === 11) {
+    return "Autumn";
   } else {
     return "Invalid";
   }
 }
 
-console.log(trafficLightSimulator("red"));
-console.log(trafficLightSimulator("yellow"));
-console.log(trafficLightSimulator("green"));
+console.log(seasonIdentifier(11));
