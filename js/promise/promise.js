@@ -1,4 +1,4 @@
-promise syntax
+// promise syntax
 let myPromise = new Promise(
   function (resolve, reject) {
     resolve(); // when successful
