@@ -97,21 +97,13 @@ handlingErrorsPromise
 // Simulating API Call:
 // Create a promise that simulates an API call which resolves with a user object { name: "John", age: 30 } after 2 seconds.
 
-const data = [
-  {
-    name: "John",
-    age: 30,
-  },
-  {
-    name: "Mantol",
-    age: 20,
-  },
-];
-
 function fetchUserData() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(data);
+      resolve({
+        name: "John",
+        age: 30,
+      });
     }, 2000);
   });
 }
@@ -136,5 +128,22 @@ const promiseTwo = new Promise((resolve, reject) => {
 });
 
 Promise.all([promiseOne, promiseTwo]).then((values) => {
+  console.log(values);
+});
+
+// Promise.race:
+// Create two promises, one that resolves after 3 seconds and one that resolves after 1 second. Use Promise.race to log the result of the promise that resolves first.
+const promiseRaceOne = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Hello");
+  }, 1000);
+});
+const promiseRaceTwo = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("World");
+  }, 3000);
+});
+
+Promise.race([promiseOne, promiseTwo]).then((values) => {
   console.log(values);
 });

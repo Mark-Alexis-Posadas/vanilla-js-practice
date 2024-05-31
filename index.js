@@ -1,19 +1,34 @@
-// Promise.all:
+// const fetchPromise = fetch("https://jsonplaceholder.typicode.com/users");
 
-// Create two promises that resolve with different values after 1 and 2 seconds, respectively. Use Promise.all to handle both promises and log the results.
+// function fetchUser() {
+//   return new Promise((resolve, reject) => {
+//     resolve(fetchPromise);
+//   });
+// }
+
+// fetchPromise
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
+
+// Promise.race:
+// Create two promises, one that resolves after 3 seconds and one that resolves after 1 second. Use Promise.race to log the result of the promise that resolves first.
 
 const promiseOne = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("Hello");
   }, 1000);
 });
-
 const promiseTwo = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("World");
-  }, 2000);
+  }, 3000);
 });
 
-Promise.all([promiseOne, promiseTwo]).then((values) => {
+Promise.race([promiseOne, promiseTwo]).then((values) => {
   console.log(values);
 });
