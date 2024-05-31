@@ -1,44 +1,13 @@
-promise syntax
-let myPromise = new Promise(
-  function (resolve, reject) {
-    resolve(); // when successful
-    reject(); // when error
-  }
-  // "Producing Code" (May take some time)
-);
+//Handling Errors:
+// Create a promise that rejects with an error message "Something went wrong!" and handle this error using .catch.
 
-// "Consuming Code" (Must wait for a fulfilled Promise)
-
-myPromise.then(
-  function (value) {
-    console.log(value);
-    /* code if successful */
-  },
-  function (error) {
-    console.log(error);
-    /* code if some error */
-  }
-);
-
-function displayAge(age) {
-  console.log(age);
-}
-
-const myPromiseSample = new Promise(function (res, rej) {
-  let age = 30;
-
-  if (age > 28) {
-    res("OK");
-    return;
-  }
-  rej("Error");
+const handlingErrorsPromise = new Promise((resolve, reject) => {
+  const isTrue = false;
+  isTrue ? resolve("success") : reject("Something went wrong!");
 });
 
-myPromiseSample.then(
-  function (value) {
-    displayAge(value);
-  },
-  function (error) {
-    displayAge(error);
-  }
-);
+handlingErrorsPromise
+  .then((message) => {
+    console.log(message);
+  })
+  .catch((error) => console.log(error));
