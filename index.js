@@ -1,34 +1,14 @@
-// const fetchPromise = fetch("https://jsonplaceholder.typicode.com/users");
+// Conditional Promise Resolution:
+// Create a promise that resolves or rejects based on a random boolean value (true/false). Handle both the resolved and rejected cases.
 
-// function fetchUser() {
-//   return new Promise((resolve, reject) => {
-//     resolve(fetchPromise);
-//   });
-// }
-
-// fetchPromise
-//   .then((response) => response.json())
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((error) => {
-//     console.error(error);
-//   });
-
-// Promise.race:
-// Create two promises, one that resolves after 3 seconds and one that resolves after 1 second. Use Promise.race to log the result of the promise that resolves first.
-
-const promiseOne = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Hello");
-  }, 1000);
-});
-const promiseTwo = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("World");
-  }, 3000);
+let promise = new Promise((resolve, reject) => {
+  Math.random() < 0.5 ? resolve("True") : reject("false");
 });
 
-Promise.race([promiseOne, promiseTwo]).then((values) => {
-  console.log(values);
-});
+promise
+  .then((value) => {
+    console.log(value);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
