@@ -1,13 +1,19 @@
-//Handling Errors:
-// Create a promise that rejects with an error message "Something went wrong!" and handle this error using .catch.
+// Promise.all:
 
-const handlingErrorsPromise = new Promise((resolve, reject) => {
-  const isTrue = false;
-  isTrue ? resolve("success") : reject("Something went wrong!");
+// Create two promises that resolve with different values after 1 and 2 seconds, respectively. Use Promise.all to handle both promises and log the results.
+
+const promiseOne = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Hello");
+  }, 1000);
 });
 
-handlingErrorsPromise
-  .then((message) => {
-    console.log(message);
-  })
-  .catch((error) => console.log(error));
+const promiseTwo = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("World");
+  }, 2000);
+});
+
+Promise.all([promiseOne, promiseTwo]).then((values) => {
+  console.log(values);
+});
