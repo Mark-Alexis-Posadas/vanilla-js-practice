@@ -1,14 +1,22 @@
-// Conditional Promise Resolution:
-// Create a promise that resolves or rejects based on a random boolean value (true/false). Handle both the resolved and rejected cases.
+function updateAge(age) {
+  let output = [];
+  for (let i = 0; i < age.length; i++) {
+    if (age[i].age > 30) {
+      output.push(age[i]);
+    }
+  }
+  return output;
+}
 
-let promise = new Promise((resolve, reject) => {
-  Math.random() < 0.5 ? resolve("True") : reject("false");
-});
+let arrayOfObjects = [
+  { name: "John", age: 30, city: "New York" },
+  { name: "Alice", age: 25, city: "Los Angeles" },
+  { name: "Bob", age: 35, city: "Chicago" },
+];
 
-promise
-  .then((value) => {
-    console.log(value);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+const output = updateAge(arrayOfObjects);
+console.log(output);
+
+// Write a JavaScript function that takes in the array of objects provided earlier and returns an array of strings containing only the names of the people in the array. The output array should contain only the names, without any other information.
+// const result = age.map((item) => item.name);
+// return result;
