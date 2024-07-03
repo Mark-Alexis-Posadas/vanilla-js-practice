@@ -12,3 +12,20 @@ function checkTriangleTypeIdentifier(paramOne, paramTwo, paramThree) {
 console.log(checkTriangleTypeIdentifier(1, 1, 1)); //equilateral
 console.log(checkTriangleTypeIdentifier(1, 0, 1)); //isoceles
 console.log(checkTriangleTypeIdentifier(1, 2, 3)); //scalene
+
+// Temperature Classifier: Write a function that takes a temperature in Celsius and prints:
+function temperatureClassifier(temp) {
+  if (temp < 0) {
+    return "Freezing";
+  } else if (temp >= 0 && temp <= 10) {
+    return "Cold";
+  } else if (temp >= 11 && temp <= 25) {
+    return "Warm";
+  } else {
+    return "Hot";
+  }
+}
+console.log(temperatureClassifier(-10)); // freezing
+console.log(temperatureClassifier(8)); // cold
+console.log(temperatureClassifier(13)); // warm
+console.log(temperatureClassifier(26)); // hot
