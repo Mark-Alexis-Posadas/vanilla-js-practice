@@ -153,3 +153,35 @@ const palindromesChecking = (params) => {
 };
 
 console.log(palindromesChecking(["radar", "hello", "level", "world"]));
+
+//find heighest number
+function printHeighestNumber(numbers) {
+  let result;
+  for (let i = 0; i < numbers.length; i++) {
+    if (
+      numbers[0] > numbers[1] &&
+      numbers[0] > numbers[2] &&
+      numbers[0] > numbers[3]
+    ) {
+      result = numbers[0];
+    } else if (
+      numbers[1] > numbers[0] &&
+      numbers[1] > numbers[2] &&
+      numbers[1] > numbers[3]
+    ) {
+      result = numbers[1];
+    } else if (
+      numbers[2] > numbers[0] &&
+      numbers[2] > numbers[1] &&
+      numbers[2] > numbers[3]
+    ) {
+      result = numbers[2];
+    } else {
+      result = numbers[3];
+    }
+  }
+  return result;
+}
+
+let numbers = [200, 1500, 1821, 1434];
+console.log(printHeighestNumber(numbers));
