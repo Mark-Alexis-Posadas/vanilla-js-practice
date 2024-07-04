@@ -1,36 +1,11 @@
 // Leap Year Checker: Write a function that checks if a given year is a leap year (consider the rules: divisible by 4, but not divisible by 100 unless also divisible by 400).
 
-// Grading System: Write a function that takes a numerical grade (0-100) and prints:
-
-// "A" for grades 90 and above,
-// "B" for grades 80-89,
-// "C" for grades 70-79,
-// "D" for grades 60-69,
-// "F" for grades below 60.
-
 // Ticket Price Calculator: Write a function that calculates the price of a movie ticket based on age and time of day:
 
 // Children (age < 12): $5
 // Adults (age 12-64): $10
 // Seniors (age ≥ 65): $7
 // Apply a $2 discount for matinee shows (before 5 PM).
-
-// Temperature Classifier: Write a function that takes a temperature in Celsius and prints:
-function temperatureClassifier(temp) {
-  if (temp < 0) {
-    return "Freezing";
-  } else if (temp >= 0 && temp <= 10) {
-    return "Cold";
-  } else if (temp >= 11 && temp <= 25) {
-    return "Warm";
-  } else {
-    return "Hot";
-  }
-}
-console.log(temperatureClassifier(-10)); // freezing
-console.log(temperatureClassifier(8)); // cold
-console.log(temperatureClassifier(13)); // warm
-console.log(temperatureClassifier(26)); // hot
 
 // "Freezing" if less than 0,
 // "Cold" if between 0 and 10 (inclusive),
