@@ -14,6 +14,11 @@ console.log(checkTriangleTypeIdentifier(1, 0, 1)); //isoceles
 console.log(checkTriangleTypeIdentifier(1, 2, 3)); //scalene
 
 // Temperature Classifier: Write a function that takes a temperature in Celsius and prints:
+// "Freezing" if less than 0,
+// "Cold" if between 0 and 10 (inclusive),
+// "Warm" if between 11 and 25 (inclusive),
+// "Hot" if above 25.
+
 function temperatureClassifier(temp) {
   if (temp < 0) {
     return "Freezing";
