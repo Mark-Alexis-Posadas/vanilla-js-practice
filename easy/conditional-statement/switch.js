@@ -64,3 +64,27 @@ function ageOfPerson(age) {
 }
 
 console.log(ageOfPerson(12)); // Output: Teen
+
+// Traffic Light System: Implement a function trafficLightAction that takes a string representing a traffic light color ("red", "yellow", "green") and uses a switch statement to return the appropriate action. For example:
+
+// "red" should return "Stop",
+// "yellow" should return "Slow down",
+// "green" should return "Go".
+
+function trafficLightSystem(action) {
+  switch (action.toLowerCase()) {
+    case "red":
+      return "Stop";
+    case "yellow":
+      return "Slow down";
+    case "green":
+      return "Go";
+    default:
+      return "Just wait!";
+  }
+}
+
+console.log(trafficLightSystem("Red")); // Output: "Stop"
+console.log(trafficLightSystem("Yellow")); // Output: "Slow down"
+console.log(trafficLightSystem("Green")); // Output: "Go"
+console.log(trafficLightSystem("Blue")); // Output: "Just wait!"
