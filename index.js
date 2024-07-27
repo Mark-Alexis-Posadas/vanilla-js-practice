@@ -1,17 +1,20 @@
-function trafficLightSystem(action) {
+function weatherAdvice(action) {
   switch (action.toLowerCase()) {
-    case "red":
-      return "Stop";
-    case "yellow":
-      return "Slow down";
-    case "green":
-      return "Go";
+    case "sunny":
+      return "Wear sunglasses";
+    case "rainy":
+      return "Take an umbrella";
+    case "snowy":
+      return "Wear warm clothes";
+    case "windy":
+      return "Hold onto your hat";
     default:
-      return "Just wait!";
+      return "Just wait for the advice!";
   }
 }
 
-console.log(trafficLightSystem("Red")); // Output: "Stop"
-console.log(trafficLightSystem("Yellow")); // Output: "Slow down"
-console.log(trafficLightSystem("Green")); // Output: "Go"
-console.log(trafficLightSystem("Blue")); // Output: "Just wait!"
+console.log(weatherAdvice("Sunny")); // Output: "Wear sunglasses"
+console.log(weatherAdvice("Rainy")); // Output: "Take an umbrella"
+console.log(weatherAdvice("Snowy")); // Output: "Wear warm clothes"
+console.log(weatherAdvice("Windy")); // Output: "Hold onto your hat"
+console.log(weatherAdvice("Cloudy")); // Output: "Just wait for the advice!"

@@ -88,3 +88,31 @@ console.log(trafficLightSystem("Red")); // Output: "Stop"
 console.log(trafficLightSystem("Yellow")); // Output: "Slow down"
 console.log(trafficLightSystem("Green")); // Output: "Go"
 console.log(trafficLightSystem("Blue")); // Output: "Just wait!"
+
+// Weather Advice: Write a function weatherAdvice that takes a string representing a weather condition ("sunny", "rainy", "snowy", "windy") and uses a switch statement to return advice. For instance:
+
+// "sunny" should return "Wear sunglasses",
+// "rainy" should return "Take an umbrella",
+// "snowy" should return "Wear warm clothes",
+// "windy" should return "Hold onto your hat".
+
+function weatherAdvice(action) {
+  switch (action.toLowerCase()) {
+    case "sunny":
+      return "Wear sunglasses";
+    case "rainy":
+      return "Take an umbrella";
+    case "snowy":
+      return "Wear warm clothes";
+    case "windy":
+      return "Hold onto your hat";
+    default:
+      return "Just wait for the advice!";
+  }
+}
+
+console.log(weatherAdvice("Sunny")); // Output: "Wear sunglasses"
+console.log(weatherAdvice("Rainy")); // Output: "Take an umbrella"
+console.log(weatherAdvice("Snowy")); // Output: "Wear warm clothes"
+console.log(weatherAdvice("Windy")); // Output: "Hold onto your hat"
+console.log(weatherAdvice("Cloudy")); // Output: "Just wait for the advice!"
