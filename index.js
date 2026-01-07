@@ -1,20 +1,12 @@
-function weatherAdvice(action) {
-  switch (action.toLowerCase()) {
-    case "sunny":
-      return "Wear sunglasses";
-    case "rainy":
-      return "Take an umbrella";
-    case "snowy":
-      return "Wear warm clothes";
-    case "windy":
-      return "Hold onto your hat";
-    default:
-      return "Just wait for the advice!";
-  }
-}
+const mgaHayopSaPalayan = require("./2025-grind/january/day-one/challenge-4.js");
 
-console.log(weatherAdvice("Sunny")); // Output: "Wear sunglasses"
-console.log(weatherAdvice("Rainy")); // Output: "Take an umbrella"
-console.log(weatherAdvice("Snowy")); // Output: "Wear warm clothes"
-console.log(weatherAdvice("Windy")); // Output: "Hold onto your hat"
-console.log(weatherAdvice("Cloudy")); // Output: "Just wait for the advice!"
+const animals = [
+  { name: "Tagak", habitat: "water" },
+  { name: "Kalabaw", habitat: "land" },
+  { name: "Kambing", habitat: "land" },
+  { name: "Tilapia", habitat: "water" },
+  { name: "Bangus", habitat: "water" },
+  { name: "Kingfisher", habitat: "water" },
+];
+
+console.log(mgaHayopSaPalayan(animals));
