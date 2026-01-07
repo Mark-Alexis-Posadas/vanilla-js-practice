@@ -1,4 +1,4 @@
-const mgaHayopSaPalayan = require("./2025-grind/january/day-one/challenge-4.js");
+const mgaHayopSaPalayan = require("./2025-grind/january/day-one/challenge-5.js");
 
 const animals = [
   { name: "Tagak", habitat: "water" },
