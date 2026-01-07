@@ -1,6 +1,5 @@
-const mgaHayopSaPalayan = require("./2025-grind/january/day-one/challenge-3.js");
+const mgaHayopSaPalayan = require("./2025-grind/january/day-one/challenge-4.js");
 
-// sample array na ipapasa sa function
 const animals = [
   { name: "Tagak", habitat: "water" },
   { name: "Kalabaw", habitat: "land" },
@@ -11,6 +10,3 @@ const animals = [
 ];
 
 console.log(mgaHayopSaPalayan(animals));
-
-// Water animals: 3
-// Land animals: 2
