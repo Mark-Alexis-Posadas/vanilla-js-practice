@@ -1,4 +1,9 @@
-const scoresChallenge = require("./2025-grind/january/day-two/challenge-3.js");
-const scores = [45, 78, 90, 32, 88, 60];
+const productsChallenge = require("./2025-grind/january/day-two/challenge-5.js");
+const products = [
+  { name: "Laptop", price: 45000 },
+  { name: "Mouse", price: 500 },
+  { name: "Keyboard", price: 1500 },
+  { name: "Monitor", price: 12000 },
+];
 
-console.log(scoresChallenge(scores));
+console.log(productsChallenge(products));
