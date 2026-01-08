@@ -1,12 +1,10 @@
-const mgaHayopSaPalayan = require("./2025-grind/january/day-one/challenge-5.js");
+const mgaHayopSaPalayan = require("./2025-grind/january/day-two/challenge-1.js");
 
 const animals = [
-  { name: "Tagak", habitat: "water" },
-  { name: "Kalabaw", habitat: "land" },
-  { name: "Kambing", habitat: "land" },
-  { name: "Tilapia", habitat: "water" },
-  { name: "Bangus", habitat: "water" },
-  { name: "Kingfisher", habitat: "water" },
+  { name: "Tagak", age: 2 },
+  { name: "Kalabaw", age: 10 },
+  { name: "Kambing", age: 4 },
+  { name: "Tilapia", age: 1 },
 ];
 
 console.log(mgaHayopSaPalayan(animals));
