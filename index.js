@@ -1,9 +1,10 @@
-const productsChallenge = require("./2025-grind/january/day-two/challenge-5.js");
-const products = [
-  { name: "Laptop", price: 45000 },
-  { name: "Mouse", price: 500 },
-  { name: "Keyboard", price: 1500 },
-  { name: "Monitor", price: 12000 },
+const totalPricePerCategory = require("./2025-grind/january/day-three/challenge-5.js");
+const items = [
+  { name: "Bigas", category: "food", price: 120 },
+  { name: "Isda", category: "food", price: 80 },
+  { name: "Sabon", category: "hygiene", price: 45 },
+  { name: "Shampoo", category: "hygiene", price: 120 },
+  { name: "Notebook", category: "school", price: 60 },
 ];
 
-console.log(productsChallenge(products));
+console.log(totalPricePerCategory(items));
