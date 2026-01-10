@@ -8,7 +8,6 @@ function mgaHayopSaPalayan(animals) {
       animals[i] === "bangus"
     ) {
       result.push(`${animals[i]} lives in water`);
-      console.log;
     } else {
       result.push(`${animals[i]} lives on land`);
     }

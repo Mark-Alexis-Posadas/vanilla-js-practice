@@ -1,6 +1,6 @@
 # 🟢 JavaScript Challenges — Batch Set
 
-## 🟩 Challenge 9 — `map` + simple logic - `Done1`
+## 🟩 Challenge 9 — `map` + simple logic - `Done`
 
 **Goal:** Masanay sa `map` + ternary
 
@@ -28,7 +28,7 @@ Gumawa ng function na:
 
 ---
 
-## 🟩 Challenge 10 — `filter` + `map`
+## 🟩 Challenge 10 — `filter` + `map` - `Done`
 
 **Goal:** Pili muna, bago baguhin
 
@@ -53,7 +53,7 @@ const scores = [45, 78, 90, 32, 88, 60];
 
 ---
 
-## 🟨 Challenge 11 — Array of objects (`map`)
+## 🟨 Challenge 11 — Array of objects (`map`) - `Done`
 
 **Goal:** Objects + conditional logic
 
