@@ -1,7 +1,7 @@
-function average(users) {
+function calculateTotalPointsAdmin(users) {
   return users
-    .filter((user) => user.active)
-    .reduce((acc, item) => acc + item.points / acc + 1, 0);
+    .filter((user) => user.role === "admin")
+    .reduce((acc, item) => acc + item.points, 0);
 }
 
 const users = [
@@ -12,4 +12,4 @@ const users = [
   { name: "Mia", age: 35, active: false, role: "admin", points: 200 },
 ];
 
-console.log(average(users));
+console.log(calculateTotalPointsAdmin(users));

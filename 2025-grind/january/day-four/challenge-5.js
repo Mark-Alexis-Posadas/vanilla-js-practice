@@ -1,7 +1,7 @@
-function average(users) {
+function greet(users) {
   return users
-    .filter((user) => user.active)
-    .reduce((acc, item) => acc + item.points / acc + 1, 0);
+    .filter((user) => user.active && user.role !== "admin")
+    .map((item) => `Hello, ${item.name}`);
 }
 
 const users = [
@@ -12,4 +12,4 @@ const users = [
   { name: "Mia", age: 35, active: false, role: "admin", points: 200 },
 ];
 
-console.log(average(users));
+console.log(greet(users));

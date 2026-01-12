@@ -151,3 +151,155 @@ At okay lang ’yon.
 ## 🧩 Motto for 2026
 
 > **Solve first. Ask later. Improve daily.**
+
+# Paano Gumaling sa Programming (Mindset ng Halimaw 🧠🔥)
+
+> Goal: Maging programmer na **kayang magsolve ng problems mag-isa**  
+> hindi dependent sa Google, AI, o ibang tao.
+
+---
+
+## 1. Mag-isip BAGO Mag-code
+
+Bago ka magsulat ng kahit isang linya ng code, tanungin muna ang sarili mo:
+
+- Ano ang **input**?
+- Ano ang **output**?
+- Ano ang **rules / conditions**?
+- Ano ang mga **edge cases**?
+
+📌 **Rule:**  
+Kung hindi mo kayang i-explain ang solution sa salita,  
+hindi mo pa talaga naiintindihan.
+
+---
+
+## 2. I-break Down ang Problem
+
+Walang problem na sobrang laki — lahat nahahati.
+
+**Example mindset:**
+
+1. Kunin ang data
+2. I-loop
+3. I-check ang condition
+4. I-save ang result
+5. Ibalik ang output
+
+📌 Kapag automatic na ito sa utak mo, malakas ka na.
+
+---
+
+## 3. Limitahan ang Pag-search
+
+Hindi bawal mag-search, pero **may tamang paraan**.
+
+❌ Mali:
+
+- “JavaScript solution for problem X”
+
+✅ Tama:
+
+- “How does `Array.reduce()` work?”
+- “What does `continue` do in a loop?”
+
+📌 **Search for tools, not answers.**
+
+---
+
+## 4. Deliberate Practice (Quality > Quantity)
+
+Mas okay ang:
+
+- **1 problem na pinag-isipan mo ng 1 oras**
+
+kaysa:
+
+- **10 problems na kinopya mo lang**
+
+Recommended practice:
+
+- LeetCode (easy → medium)
+- Codewars
+- Sarili mong problems (pinakamalakas)
+
+📌 Kung di mo kaya isulat ang solution sa papel,  
+huwag ka munang mag-code.
+
+---
+
+## 5. Debugging = Thinking Skill
+
+Kapag may bug:
+
+- Huwag agad magtanong
+- Gumamit ng `console.log`
+- I-trace ang code line by line
+
+Tanungin ang sarili:
+
+- Ano ang value nito ngayon?
+- Bakit ito nagbago?
+- Tama ba expectation ko?
+
+📌 Debugging = pag-iisip, hindi syntax.
+
+---
+
+## 6. Magturo (Kahit Sarili Mo Lang)
+
+I-explain mo ang solution na parang may tinuturuan ka.
+
+Kung nabubulol ka:
+
+- May kulang ka pang alam
+- Balikan ang basics
+
+📌 Teaching = ultimate test ng understanding.
+
+---
+
+## 7. Paulit-ulit ang Basics Hanggang Automatic
+
+Dapat muscle memory na ang:
+
+- loops
+- conditionals
+- arrays & objects
+- functions
+- scope
+
+Kapag automatic na ito,  
+**free na utak mo para sa logic**.
+
+---
+
+## 8. Tanggapin na Matagal ang Mastery
+
+Walang shortcut.
+
+Lahat ng magagaling:
+
+- nalito
+- nagkamali
+- na-stuck
+- muntik sumuko
+
+📌 Ang kaibahan: **hindi sila tumigil**.
+
+---
+
+## Timeline Reality Check
+
+- 🧠 6 months → iba na ang thinking
+- 🔥 1–2 years → bihira ka na ma-stuck
+- 👑 5 years → ikaw na tinatanungan ng iba
+
+---
+
+## Final Rule (Pinaka-importante)
+
+> **Hindi ka nagiging halimaw sa dami ng alam,  
+> kundi sa dami ng problem na sinubukan mong solusyunan mag-isa.**
+
+Consistency > Talent > Motivation
