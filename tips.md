@@ -1,3 +1,5 @@
+JT0012109480021
+
 # 🧠 Problem Solver Tips (Getting Out of Tutorial / AI Hell)
 
 > Goal: Matutong **mag-isip at mag-solve mag-isa**, hindi lang sumunod sa tutorials.
