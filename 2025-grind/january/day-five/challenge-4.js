@@ -9,11 +9,12 @@ const products = [
   { id: 8, name: "Monitor", category: "Electronics", price: 15000, stock: 7 },
 ];
 
-const countOutOfStocks = products.reduce((acc, item) => {
-  if (item.stock === 0) {
-    return acc + 1;
+const totalInventoryValue = products.reduce((acc, item) => {
+  if (item.stock > 0) {
+    const multiplyPriceAndStock = item.price * item.stock;
+    acc = multiplyPriceAndStock + acc;
   }
   return acc;
 }, 0);
 
-console.log(countOutOfStocks);
+console.log(totalInventoryValue);
