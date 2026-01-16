@@ -9,11 +9,17 @@ const products = [
   { id: 8, name: "Monitor", category: "Electronics", price: 15000, stock: 7 },
 ];
 
-const countOutOfStocks = products.reduce((acc, item) => {
-  if (item.stock === 0) {
-    return acc + 1;
-  }
-  return acc;
-}, 0);
+// const countOutOfStocks = products.reduce((acc, item) => {
+//   if (item.stock === 0) {
+//     return acc + 1;
+//   }
+//   return acc;
+// }, 0);
 
-console.log(countOutOfStocks);
+function getElectronics(products) {
+  return products.filter(
+    (product) => product.category === "Electronics" && product.stock > 0
+  ).map((item) => `${item.name} - ${item.price}`);
+}
+
+console.log(getElectronics(products));
