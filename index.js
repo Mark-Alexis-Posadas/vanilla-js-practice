@@ -9,17 +9,40 @@ const products = [
   { id: 8, name: "Monitor", category: "Electronics", price: 15000, stock: 7 },
 ];
 
-// const countOutOfStocks = products.reduce((acc, item) => {
-//   if (item.stock === 0) {
-//     return acc + 1;
-//   }
-//   return acc;
-// }, 0);
-
 function getElectronics(products) {
-  return products.filter(
-    (product) => product.category === "Electronics" && product.stock > 0
-  ).map((item) => `${item.name} - ${item.price}`);
+  return products
+    .filter(
+      (product) => product.category === "Electronics" && product.stock > 0
+    )
+    .map((item) => `${item.name} - ${item.price}`);
 }
 
-console.log(getElectronics(products));
+function countProductsPerCategory(products) {
+  const productsItems = products.reduce((acc, item) => {
+    if (!acc[item.category]) {
+      acc[item.category] = 0;
+    }
+    acc[item.category] = acc[item.category] + 1;
+    return acc;
+  }, {});
+
+  return productsItems;
+}
+console.log(countProductsPerCategory(products));
+
+function wordsToString(words) {
+  const counts = words.reduce((acc, item) => {
+    if (!acc[item]) {
+      acc[item] = 0;
+    }
+    acc[item] += 1;
+    return acc;
+  }, {});
+
+  return Object.entries(counts)
+    .map(([word, count]) => `${word}(${count})`)
+    .join(", ");
+}
+
+const words = ["hi", "hello", "hi", "hey", "hello"];
+console.log(wordsToString(words));
