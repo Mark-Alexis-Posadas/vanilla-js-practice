@@ -1,3 +1,5 @@
+const animals = ["Kalabaw", "Baka", "Kambing", "Aso", "Tagak", "Tipaklong"];
+
 function mgaHayopSaPalayan(animals) {
   // let output = [];
   // animals.forEach((animal) => {
@@ -12,10 +14,10 @@ function mgaHayopSaPalayan(animals) {
   const output = animals.map((animal) =>
     animal === "Kalabaw"
       ? `${animal} is resting`
-      : `${animal} is working in the field`
+      : `${animal} is working in the field`,
   );
 
   return output;
 }
 
-module.exports = mgaHayopSaPalayan;
+console.log(mgaHayopSaPalayan(animals));
