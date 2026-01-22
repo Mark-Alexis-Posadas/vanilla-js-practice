@@ -102,3 +102,87 @@ const removeDuplicates = numbers.reduce((acc, item) => {
 // 👉 Result: [1, 2, 3, 4, 5]
 
 console.log(removeDuplicates);
+
+/* ================================
+   DATA SETS
+================================ */
+
+// Users for basic filtering
+const usersBasic = [
+  { name: "Juan", active: true },
+  { name: "Maria", active: false },
+  { name: "Pedro", active: true },
+];
+
+// Users with age
+const usersWithAge = [
+  { name: "Juan", age: 17 },
+  { name: "Maria", age: 22 },
+  { name: "Pedro", age: 18 },
+];
+
+// Products with stock
+const productsWithStock = [
+  { name: "Laptop", stock: 5 },
+  { name: "Mouse", stock: 0 },
+  { name: "Keyboard", stock: 3 },
+];
+
+// Products with price
+const productsWithPrice = [
+  { name: "Phone", price: 15000 },
+  { name: "Laptop", price: 60000 },
+  { name: "Tablet", price: 30000 },
+];
+
+// Users with role + status
+const usersWithRole = [
+  { email: "juan@mail.com", role: "admin", active: true },
+  { email: "maria@mail.com", role: "user", active: true },
+  { email: "pedro@mail.com", role: "admin", active: false },
+  { email: "ana@mail.com", role: "admin", active: true },
+];
+
+/* ================================
+   TEST CASES
+================================ */
+
+// 1️⃣ Active user names
+const activeUserNames = usersBasic
+  .filter((user) => user.active)
+  .map((user) => user.name);
+
+console.log("1. Active Users:", activeUserNames);
+// ["Juan", "Pedro"]
+
+// 2️⃣ Adult users (18+)
+const adultUserNames = usersWithAge
+  .filter((user) => user.age >= 18)
+  .map((user) => user.name);
+
+console.log("2. Adult Users:", adultUserNames);
+// ["Maria", "Pedro"]
+
+// 3️⃣ Products in stock
+const productsInStock = productsWithStock
+  .filter((product) => product.stock > 0)
+  .map((product) => product.name);
+
+console.log("3. Products In Stock:", productsInStock);
+// ["Laptop", "Keyboard"]
+
+// 4️⃣ Uppercase expensive products (price >= 30000)
+const expensiveProductNamesUppercase = productsWithPrice
+  .filter((product) => product.price >= 30000)
+  .map((product) => product.name.toUpperCase());
+
+console.log("4. Expensive Products:", expensiveProductNamesUppercase);
+// ["LAPTOP", "TABLET"]
+
+// 5️⃣ Emails of active admins
+const activeAdminEmails = usersWithRole
+  .filter((user) => user.active && user.role === "admin")
+  .map((user) => user.email);
+
+console.log("5. Active Admin Emails:", activeAdminEmails);
+// ["juan@mail.com", "ana@mail.com"]
