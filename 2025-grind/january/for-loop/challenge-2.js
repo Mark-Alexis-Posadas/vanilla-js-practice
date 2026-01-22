@@ -1,3 +1,15 @@
+const animals = [
+  "tagak",
+  "tilapia",
+  "bangus",
+  "kalabaw",
+  "baka",
+  "kambing",
+  "aso",
+  "palaka",
+  "tipaklong",
+];
+
 function mgaHayopSaPalayan(animals) {
   let waterCount = 0;
   let landCount = 0;
@@ -16,4 +28,4 @@ function mgaHayopSaPalayan(animals) {
   return `Water animals: ${waterCount}\nLand animals: ${landCount}`;
 }
 
-module.exports = mgaHayopSaPalayan;
+console.log(mgaHayopSaPalayan(animals));

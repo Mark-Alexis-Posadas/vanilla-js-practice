@@ -1,3 +1,15 @@
+const animals = [
+  { name: "Tagak", habitat: "water" },
+  { name: "Tilapia", habitat: "water" },
+  { name: "Bangus", habitat: "water" },
+  { name: "Kalabaw", habitat: "land" },
+  { name: "Baka", habitat: "land" },
+  { name: "Kambing", habitat: "land" },
+  { name: "Aso", habitat: "land" },
+  { name: "Palaka", habitat: "water" },
+  { name: "Tipaklong", habitat: "land" },
+];
+
 function mgaHayopSaPalayan(animals) {
   let waterAnimals = [];
   let landAnimals = [];
@@ -19,4 +31,4 @@ function mgaHayopSaPalayan(animals) {
   return { water: waterAnimals, land: landAnimals };
 }
 
-module.exports = mgaHayopSaPalayan;
+console.log(mgaHayopSaPalayan(animals));
