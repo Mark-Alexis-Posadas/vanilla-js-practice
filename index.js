@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const products = [
   { name: "Laptop", price: 5000, stock: 5, category: "Electronics" },
   { name: "Mouse", price: 500, stock: 0, category: "Electronics" },
@@ -77,3 +78,5 @@ console.log(total);
 // and values are their flavor scores
 
 // TODO: 2️⃣ Use reduce to calculate total flavor score of the tinola
+=======
+>>>>>>> b62f58907a66710fc1d49c486b464c52bcfdb8e6
