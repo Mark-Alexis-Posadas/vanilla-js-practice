@@ -50,3 +50,30 @@ console.log(totalValuePerCategory);
 // }
 
 // console.log(expenseiveProducts(products));
+const ingredients = [
+  { name: "Bawang", flavor: 3 },
+  { name: "Sibuyas", flavor: 2 },
+  { name: "Luya", flavor: 4 },
+  { name: "Paminta", flavor: 1 },
+  { name: "Manok", flavor: 5 },
+  { name: "Sayote", flavor: 2 },
+  { name: "Dahon ng Malunggay", flavor: 3 },
+];
+
+const output = ingredients.reduce((acc, item) => {
+  acc[item.name] = item.flavor;
+  return acc;
+}, {});
+console.log(output);
+
+const total = ingredients.reduce((acc, item) => {
+  acc = acc + item.flavor;
+  return acc;
+}, 0);
+
+console.log(total);
+
+// TODO: 1️⃣ Convert ingredients into an object where keys are ingredient names
+// and values are their flavor scores
+
+// TODO: 2️⃣ Use reduce to calculate total flavor score of the tinola
